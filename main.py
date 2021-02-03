@@ -38,7 +38,7 @@ def get_agreeance_text(ratio):
         return None
 
 
-def scrape_allsides_tables(data):\
+def scrape_allsides_tables(data):
 
     print('Scraping tables...')
 
@@ -110,8 +110,8 @@ def open_json(data):
 
 def main():
     data = []
-    data = scrape_allsides_tables
-    data = scrape_allsides_sources
+    data = scrape_allsides_tables(pages)
+    data = scrape_allsides_sources(pages)
     save_json(data)
 
     print('Done.')
