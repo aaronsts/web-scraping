@@ -110,8 +110,8 @@ def open_json(data):
 
 def main():
     data = []
-    data = scrape_allsides_tables(pages)
-    data = scrape_allsides_sources(pages)
+    data = scrape_allsides_tables()
+    data = scrape_allsides_sources()
     save_json(data)
 
     print('Done.')
